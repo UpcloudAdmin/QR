@@ -1,4 +1,13 @@
 /* Reset some default styles for consistent rendering across browsers */
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('path/to/SF-Pro-Display-Regular.woff2') format('woff2'),
+       url('path/to/SF-Pro-Display-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body,
 h1,
 h2,
@@ -7,7 +16,7 @@ ul,
 li {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
 
 }
 
@@ -25,6 +34,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  width: auto;
 }
 
 .navbar li {
@@ -35,7 +45,7 @@ nav {
 /* homepage body section */
 .homepage {
   text-align: center;
-  padding: 0 50px;
+  padding: 0 20px;
 }
 
 .main-title {
@@ -78,7 +88,7 @@ nav {
 
 .content-over-img-first ul {
   list-style: none !important;
-  margin-right: 10px;
+  margin-right: 25px;
   position: absolute;
 }
 
@@ -148,12 +158,14 @@ nav {
 .carousel-arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  transform: translateY(-200%);
+  
+  color: #000;
   border: none;
   padding: 10px;
-  font-size: 18px;
+  font-size: 28px;
+  font-weight: 700;
+  background: none;
 }
 
 .carousel-arrow-left {
@@ -206,14 +218,15 @@ footer {
 /* phone */
 @media (max-width: 320px) {}
 
-@media screen and (max-width: 390px) {
+@media (max-width: 390px) {
 
+  
   .logo {
     font-size: 10px;
   }
 
   .homepage {
-    padding: 0px 10px;
+    padding: 0px 20px;
   }
 
   .main-title {
@@ -230,9 +243,18 @@ footer {
     font-size: 15px;
   }
 
+  .first-image {
+    overflow-x:hidden ;
+
+  }
+
   .first-image img {
     height: 30vh;
-    width: 50vh;
+    width: 37vh;/*50vh*/
+  }
+  .second-image {
+    overflow-x:hidden ;
+
   }
 
   .second-image img {
@@ -244,7 +266,7 @@ footer {
 
   .third-image img {
     width: 40vh;
-    height: 60vh;
+    height: 45vh; /*value before 60vh*/
   }
 
   .carousel-container {
@@ -257,12 +279,14 @@ footer {
   .carousel-arrow {
     position: absolute;
     top: 50%;
-    transform: translateY(-250%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    transform: translateY(-200%);
+    
+    color: #000;
     border: none;
     padding: 10px;
-    font-size: 18px;
+    font-size: 28px;
+    font-weight: 700;
+    background: none;
   }
 
   .carousel-label {
@@ -277,6 +301,9 @@ footer {
       font-weight: bold; */
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    width: 200px;
+    /* height: 100px; */
+    object-fit: cover;
   }
 
   .content-over-img-first h1 {
@@ -304,10 +331,16 @@ footer {
   }
 
   .second-image img {
-    height: 70vh;
-    width: 40vh;
+    /* height: 70vh;
+    width: 70vh;
     transform: rotate(360deg);
+    right: 20%; */
     /* transform: translateX(-45px); */
+    position: relative;
+    height: 150vh;
+    width: 60vh;
+    transform: rotate(360deg);
+    right: 15%;
   }
 
   .third-image img {
@@ -325,30 +358,218 @@ footer {
     right: 20px;
     /* margin-left: 20px;  */
   }
+.month-content{
+  text-align: left;
+  font-size: 10px;
+  padding: 0px 20px;
+}
+  .bold-content{
+
+    font-size: 15px!important;
+    font-weight: 600;
+    color: #454545;
+
+  }
+
+  .holiday-img {
+    width: 15vh;
+    height: 30vh;   
+  }
+
+  .holiday-text
+  {
+    font-size: 10px;
+  }
+.holiday-section {
+  display: flex;
+  position: relative;
+}
+  .holiday-img-section{
+    display: flex;
+  }
+ 
+  .holiday-image-one  {
+    
+    padding: 20px;
+    width: 15vh;
+    height: 30vh;
+
+  }
+
+  .holiday-image-two{
+    width: 15vh;
+    height: 30vh;
+
+    
+    padding: 20px;
+  }
+  .holiday-text {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    text-align: left;
+    padding: 0px 26px;
+  }
+
+  .sixth-image-container{
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sixth-image img {
+    max-width: 35vh;
+    max-height: 60vh;
+    /* transform: rotate(90deg); */
+    padding: auto;
+    /* padding-top: 50px; */
+  }
+  .seventh-image-container {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .seventh-image img{
+    
+    max-width: 50vh;
+    /* max-height: 41vh; */
+  }
+
+  .blur-section {
+    position: relative;
+    overflow: hidden;
+    height: 33vh;
+    padding-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .blur {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .blur img {
+    position: relative;
+    z-index: 2;
+    height: 30vh;
+    width: 40vh;
+  }
+  
+  .blur-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(35px); /* Adjust the blur amount as desired */
+    background-image: url('./assets/blur-backg.jpg');
+    z-index: 1;
+    background-size: cover;
+  }
+  
+  .blur-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-1px) scale(2);
+    filter: blur(8px); /* Adjust the blur amount as desired */
+    background-image: url('./assets/doctor-blur-main.png');
+    background-size: cover;
+  }
+  .audio-img-section{
+    display: flex;
+    padding: auto;
+    padding: 0px 30px 50px 30px;
+  }
+
+.audio-image img{
+  width: 15vh;
+  height: 30vh;
+  border-radius: 20px;
+}
+.audio-image {
+  padding: 20px;
+}
+
+.video-image-one{
+  padding: 20px;
+}
+.video-image-two {
+  padding: 20px;
+}
+.video-image-one img{
+  width: 15vh;
+  height: 30vh;
+  border-radius: 20px!important;
+  object-fit: cover;
+  background-size: cover;
+} 
+.video-image-two img {
+  width: 15vh;
+  height: 30vh;
+  border-radius: 20px!important;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.feedback-section img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-size: cover;
+}
 
 }
 
 @media (max-width: 412px) {
+  
+  .fade-in-on-scroll {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .fade-in-on-scroll.fade-in {
+    opacity: 1;
+  }
+  
   .logo {
     font-size: 10px;
   }
 
   .homepage {
-    padding: 0px 10px;
+    padding: 0px 20px;
   }
 
   .main-title {
-    font-size: 15px;
+    /* font-size: 15px;
     padding-top: 20px;
-    margin: 20px;
+    margin: 20px; */
+    font-size: 32px;
+    padding-top: 20px;
+    margin: 0px 25px 45px 0px;
   }
 
   .main-title p {
-    font-size: 15px;
+    /* font-size: 15px; */
+    font-size: 32px;
   }
 
   .main-title span {
-    font-size: 15px;
+    font-size: 32px;
   }
 
   .first-image img {
@@ -364,20 +585,36 @@ footer {
   }
 
   .third-image img {
-    width: 40vh;
-    height: 70vh;
-    padding: 25px 0px 15px 30px
+    /* width: 40vh;
+    height: 60vh; */
+    width: 375px;
+    height: 462px;
+    padding: 80px 0px;
+
   }
+  .third-image {
+    background-color: #acc5ca;
+    height: 600px;
+}
 
   .carousel-container {
     position: relative;
     width: 30vh;
-    /* Adjust as needed */
     height: 50vh;
-    /* Adjust as needed */
     overflow: hidden;
-    margin: auto;
     padding: 0px 60px 0px 60px!important;
+  }
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-200%);
+    
+    color: #000;
+    border: none;
+    padding: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    background: none;
   }
 
   .carousel-label {
@@ -392,21 +629,14 @@ footer {
       font-weight: bold; */
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-  }
-  
-  .carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-200%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
+    width: 200px;
+    /* height: 100px; */
+    object-fit: cover;
   }
 
   .content-over-img-first h1 {
     font-size: 15px;
+
   }
 
   .content-over-img-second h1 {
@@ -422,37 +652,319 @@ footer {
     margin-bottom: 20px;
     
   }
+
+  .first-image img {
+    height: 30vh;
+    width: 50vh;
+  }
+
+  .second-image img {
+    
+    position: relative;
+    height: 150vh;
+    width: 60vh;
+    transform: rotate(360deg);
+    right: 15%;
+  }
+
+  .third-image img {
+    width: 40vh;
+    height: 70vh;
+    padding: 25px 0px 15px 30px;
+  }
+
+  .carousel-arrow-left {
+    /* left: 0px; */
+    /* margin-right: 20px;  */
+left: -5px;
+  }
+  
+  .carousel-arrow-right {
+    /* right: 20px; */
+    /* margin-left: 20px;  */
+    right:-10px;
+  }
+.month-content{
+  text-align: left;
+  font-size: 10px;
+  padding: 0px 20px;
 }
+  .bold-content{
 
+    font-size: 15px!important;
+    font-weight: 600;
+    color: #454545;
 
+  }
 
+  .holiday-img {
+    width: 15vh;
+    height: 30vh;   
+  }
 
-
-
-
-
-@media (max-width: 470px) {}
-
-.container {
+  .holiday-text
+  {
+    font-size: 10px;
+  }
+.holiday-section {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
+  position: relative;
 }
+  .holiday-img-section{
+    display: flex;
+  }
+ 
+  .holiday-image-one  {
+    
+    padding: 20px;
+    width: 15vh;
+    height: 30vh;
 
-.iphone {
-  width: 730px;
-  height: 1460px;
-  background-image: url('vertical_iphone_image.jpg');
-  background-size: cover;
-}
+  }
 
-@media only screen and (max-width: 1460px) {
-  .iphone {
-    width: 1460px;
-    height: 730px;
-    background-image: url('horizontal_iphone_image.jpg');
+  .holiday-image-two{
+    width: 15vh;
+    height: 30vh;
+
+    
+    padding: 20px;
+  }
+  .holiday-text {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    text-align: left;
+    padding: 0px 26px;
+  }
+
+  .sixth-image-container{
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sixth-image img {
+    max-width: 35vh;
+    max-height: 60vh;
+    /* transform: rotate(90deg); */
+    padding: auto;
+    /* padding-top: 50px; */
+  }
+  .seventh-image-container {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .seventh-image img{
+    
+    /* max-width: 50vh; */
+    /* max-height: 41vh; */
+    width:  334px;
+    height: 284px;
+    padding-top: 40px;
+  }
+
+  .blur-section {
+    position: relative;
+    overflow: hidden;
+    height: 33vh;
+    padding-top: 20px;
+  }
+  
+  .blur {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .blur img {
+    position: relative;
+    z-index: 2;
+    height: 30vh;
+    width: 40vh;
+  }
+  
+  .blur-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(35px); /* Adjust the blur amount as desired */
+    background-image: url('./assets/blur-backg.jpg');
+    z-index: 1;
     background-size: cover;
   }
+  
+  .blur-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-1px) scale(2);
+    filter: blur(8px); /* Adjust the blur amount as desired */
+    background-image: url('./assets/doctor-blur-main.png');
+    background-size: cover;
+  }
+  .audio-img-section{
+    display: flex;
+    padding: auto;
+    padding: 0px 30px;
+  }
+
+.audio-image img{
+  /* width: 15vh;
+  height: 30vh;
+  border-radius: 20px; */
+  width: 158px;
+    height: 340px;
+    position: relative;
+    left: -21%;
 }
+.audio-image {
+  padding: 20px;
+}
+
+.video-image-one{
+  padding: 20px;
+}
+.video-image-two {
+  padding: 20px;
+}
+.video-image-one img{
+  
+  width: 158px;
+  height: 340px;
+  position: relative;
+  left: -21%;
+    border-radius: 20px!important;
+} 
+.video-image-two img {
+  
+  width: 158px;
+  height: 340px;
+  position: relative;
+  left: -21%;
+  border-radius: 20px!important;
+}
+
+.feedback-section img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-size: cover;
+}
+.doctor-profile-section img{
+  width: 100%;
+  height: 441px;
+}
+.doctor-cap-one {
+  position: absolute;
+    left: 10%;
+}
+.doctor-cap-two {
+  position: absolute;
+  justify-content: flex-end;
+  right: 10%;
+  margin-top: -65px;
+  
+}
+.qna {
+  width: 100%;
+  height: auto;
+  background:#f0f0f0 ;
+}
+
+.doctor-profile-two img{
+  width: 271px;
+  height: 403px;
+  right: 10;
+  position: relative;
+  left: 30%;
+  margin: 50px 0px 0px 0px;
+}
+/* .doctor-profile-two{
+  padding-bottom: 144px;
+} */
+.doctor-profile-three img{
+width: 275px;
+height: 455px;
+}
+.doctor-cap-three h1{
+  align-items: flex-end!important;
+}
+
+.personal-card {
+  height: 550px;
+  background: #fcfcfc;
+}
+
+.clinic-profile {
+  font-size: 30px;
+    text-align: right;
+    position: absolute;
+    right: 4%;
+}
+.map-img img{
+  object-fit: cover;
+  width: 100%;
+}
+.contact {
+  padding: 10px;
+  color: #fff;
+  background:none;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.contact a {
+  text-decoration: none!important;
+}
+.same-profile-box img{
+  width:358px;
+   height:289px;
+  padding: 20px;
+  background: #fff;
+}
+
+.bold-line {
+  width: 20%;
+  height: 2px;
+  background-color: black;
+  font-weight: bold;
+  margin-top: 20px; /* Adjust as needed */
+  margin-bottom: 10px; /* Adjust as needed */
+}
+.left-list
+  {
+    width: 50%;
+    float: left;
+    list-style-type: none;
+    text-align: left;
+  }
+  .right-list {
+    width: 50%;
+    float: left;
+    list-style-type: none;
+    text-align: left;
+  }
+
+  .list-item {
+    margin-bottom: 10px;
+}
+
+
+}
+
