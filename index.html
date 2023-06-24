@@ -7,18 +7,26 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/css/bootstrap.min.css">
+  <!-- Add the Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <script src="script.js"></script>
 </head>
 
 <body>
+  <!-- Header section -->
   <header>
     <nav>
       <div class="logo">
-        <h1>LOGO</h1>
+        <h1>Upcloud <span style="color: #F5A623;">Technologies</span></h1> </br> <span style="color: #939393;"><h1>Presents</h1></span>
       </div>
+
+      <div ><button class="contact" onclick="clickContact()">Contact Us</button></div>
     </nav>
   </header>
 
+
+  <!-- Home section -->
   <section class="homepage" style="padding-top: 50px;">
     <div class="content">
       <div class="main-title">
@@ -28,6 +36,8 @@
     </div>
   </section>
 
+
+  <!-- First section -->
   <section>
     <div class="first-image">
       <img src="./assets/main.png" alt="">
@@ -35,34 +45,34 @@
   </section>
 
 
+  <!-- second section -->
   <section class="homepage" style="padding-top: 50px;">
     <div class="main-title">
-      <h1>Here We Introduce you</h1>
-      <p>With Doc's</p>
+      <h1 style="font-size: 32px; font-weight: 700;">Here We Introduce you</h1>
+      <p style="font-size: 32px; font-weight: 300;">With Doc's</p>
     </div>
   </section>
 
-  <section class="homepage">
-    <div>
-      <div>
-        <div class="second-image">
-          <img src="./assets/iphone 13 mini.png" alt="">
-        </div>
+  <section>
+    <div class="second-image-container">
+      <div class="second-image">
+        <img src="./assets/iphone 13 mini.png" alt="">
       </div>
     </div>
   </section>
 
+  <!-- Third section -->
   <section class="homepage">
-    
+
     <div class="main-title">
-      <h1>Introducing Calender</h1>
+      <h1>A Concept Of</h1>
       <span style="color:#E7D0CA;">1</span>,<span style="color:black;">2</span>,<span
         style="color:#42759B;">3</span>,<span style="color:#B4000B;">4</span>
     </div>
 
     <div class="carousel-container">
       <div class="carousel" id="#myCarousel">
-       
+
         <div class="carousel-slide">
           <img class="image1" src="./assets/monthly - black.2.png" alt="Image 1">
           <div class="carousel-label">
@@ -92,13 +102,17 @@
           </div>
         </div>
       </div>
-      <button class="carousel-arrow carousel-arrow-left left">&lt;</button>
-    <button class="carousel-arrow carousel-arrow-right right">&gt;</button>
+
+      <button class="carousel-arrow carousel-arrow-left left"><i class="fa fa-angle-left"
+          style="font-size:36px"></i></button>
+      <button class="carousel-arrow carousel-arrow-right right"><i class="fa fa-angle-right"
+          style="font-size:36px"></i></i>
+      </button>
     </div>
 
   </section>
-  
 
+  <!-- Fourth section -->
   <section class="homepage" style="padding-top: 50px;">
     <div class="main-title">
       <h1>Year On Year</h1>
@@ -108,9 +122,9 @@
 
   <div class="yoy">
     <section class="content-over-img-first">
-      <ul>
+      <!-- <ul>
         <li>
-          <h1>Your Current </br> <span style="color: #187DFF;">Date</span> & <span style="color: #187DFF;">Month</span>
+          <h1>Your Current </br> <span id="date" class="fade-in-element" style="color: #187DFF;">Date</span> & <span style="color: #187DFF;">Month</span>
           </h1>
         </li>
         </br>
@@ -123,14 +137,33 @@
               style="color: #187DFF;">Month</span></h1>
         </li>
         </br>
+      </ul> -->
+
+      <ul>
+        <li>
+          <h1 class="fade-in-on-scroll">Your Current </br> <span id="date" class="fade-in-element"
+              style="color: #187DFF;">Date</span> & <span style="color: #187DFF;">Month</span>
+          </h1>
+        </li>
+        </br>
+        <li>
+          <h1 class="fade-in-on-scroll">External</br> <span style="color: #1A936F;">Working Days</span></h1>
+        </li>
+        </br>
+        <li>
+          <h1 class="fade-in-on-scroll">Leaves Taken as </br> <span style="color: #F5A623;">Holidays</span> & <span
+              style="color: #187DFF;">Month</span></h1>
+        </li>
+        </br>
       </ul>
+
     </section>
 
     <section class="homepage">
       <div>
-        <div>
+        <div class="third-image-conatiner">
           <div class="third-image">
-            <img src="./assets/YOY Calendar.2.2.png" alt="">
+            <img src="./assets/YOY Calendar.3.png" alt="">
           </div>
         </div>
       </div>
@@ -150,6 +183,303 @@
       </ul>
     </section>
   </div>
+
+
+
+  <!-- Sixth section -->
+
+  <section class="homepage">
+    <div class="main-title">
+      <h1 style="font-size: 25px;">It’s them now
+      </h1>
+      <p style="font-size: 25px;margin-bottom: 50px;">They have something for you..</p>
+    </div>
+    <div class="main-title">
+      <h1 style="font-size: 25px;padding-bottom: 32px;font-weight: 700;">A proposition which adds value.
+      </h1>
+    </div>
+    <div class="sixth-image-container">
+      <div class="sixth-image">
+        <img src="./assets/note 10.png" alt="">
+      </div>
+    </div>
+    </br>
+    <!-- <span style="display: block; border-bottom: 1px solid #d4d4d4; margin: 20px;"></span> -->
+
+
+    <div class="seventh-image-container">
+      <div class="seventh-image">
+        <img src="./assets/MacBook Pro 16.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- seventh section -->
+
+  <section class="homepage">
+    <div class="main-title">
+      <h1 style="font-size: 35px; font-weight: 700;padding: 50px 0px 50px 0px;">The Journey
+      </h1>
+      <h1 style="font-size: 25px; font-weight: 700;">The Physical Journey</h1>
+      <p style="font-size: 25px;">In- Clinic Appointments</p>
+    </div>
+  </section>
+  <section class="blur-section">
+    <div class="blur">
+      <img src="./assets/doctor-blur-main.png" alt="">
+      <div class="blur-effect"></div>
+    </div>
+
+  </section>
+
+
+  <!-- eighth section -->
+
+  <section style="padding: 40px 20px 40px 20px;">
+    <div class="main-title">
+      <h1 style="font-size: 25px; font-weight: 700;">The Cellular Journey</h1>
+      <p style="font-size: 25px;font-weight: 300;">Audio Appointments</p>
+    </div>
+  </section>
+  <section>
+    <div>
+      <div class="audio-img-section">
+        <div class="audio-image"><img style="border-radius: 20px;" src="./assets/audio ios.png" alt=""></div>
+        <div class="audio-image"><img style="border-radius: 20px;" src="./assets/oneplus6t.png" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ninth section -->
+
+  <section style="padding: 40px 20px 40px 20px;">
+    <div class="main-title">
+      <h1 style="font-size: 25px;font-weight: 700;">The See Journey</h1>
+      <p style="font-size: 25px;font-weight: 300;">Video Appointments</p>
+    </div>
+  </section>
+  <section>
+    <div>
+      <div class="audio-img-section">
+        <div class="video-image-one"><img style="border-radius: 20px;" src="./assets/One Plus 7 Pro .png" alt=""></div>
+        <div class="video-image-two"><img style="border-radius: 20px;" src="./assets/Pixel 4 XL.png" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-bottom: 30px;">
+    <div class="seventh-image-container">
+      <div class="seventh-image">
+        <img src="./assets/PixelBook Go.png" alt="">
+      </div>
+    </div>
+
+
+    <div class="seventh-image-container" style="padding-top: 50px;">
+      <div class="seventh-image">
+        <img src="./assets/iPad Pro .png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Tenth section -->
+  <section class="homepage" style="margin: 70px 0px;">
+    <divs>
+      <h3 style="text-align: center; font-size: 20px; font-weight: 600;padding-bottom: 50px;">Well Don't Forget The
+        Feedback... </br> Haaan
+        !!!</h3>
+    </divs>
+
+    <div class="feedback-section">
+      <img src="./assets/iPhone 12 Mockup.png" alt="">
+    </div>
+  </section>
+
+  <!-- eleventh section -->
+  <div class="homepage" style="background: #f0f0f0;height: 750px;">
+    <span class="white-card">
+    </span>
+    <section class="doctor-profile">
+      <div class="main-title" style="padding: 50px 0px;">
+        <h1 style="font-size: 30px; font-weight: 700;">It's You It's </h1>
+        <p style="font-weight: 300;">A Thing</p>
+      </div>
+    </section>
+    <section class="profile-section">
+      <div class="doctor-cap-one">
+        <h1>Personal</h1>
+        <p>Profile</p>
+      </div>
+      <div class="white-box"></div>
+        <div class="doctor-profile-section">
+          <img src="./assets/1 Close Up.png" alt="">
+        </div>
+        <div class="doctor-cap-two">
+          <h1>Clinic</h1>
+          <p>Profile</p>
+        </div>
+      
+      
+    </section>
+  </div>
+  
+    
+
+   
+  <section class="qna">
+    <div class="homepage">
+
+      <div class="main-title" style="line-height: 3rem; width: 100%;padding: 35px 0px;">
+        <p style="font-size: 35px;font-weight: bold;color: #454545;font-family:'Poppins';">Being Verified - </p>
+        <p style="font-weight: 500; color: #454545;">Yes !</p>
+        <span style="font-size: 35px;font-weight: bold; color: #454545;"> A </span><span
+          style="font-weight:thin;color: #454545;">stunning Image</span>
+        <p style="font-size: 35px;font-weight: 600; color: #454545;">as a </p>
+        <p style="font-size: 35px;font-weight: bold; color: #454545; text-decoration: underline;">Representation</p>
+        </br>
+        <p style="font-size: 35px;font-weight: bold;color: #454545;">You</p>
+        <!-- <p style="font-weight: 500; color: #454545;">Yes !</p> -->
+
+        <span style="font-size: 35px;font-weight: bold; color: #454545;">As</span> <span
+          style="font-weight: lighter;color: #454545;">Known By </span><span
+          style="font-size: 35px;font-weight: 600; color: #454545;">?</span>
+
+
+        </br> </br>
+
+
+        <span style="font-weight: lighter;color: #454545;">What</span><span
+          style="font-size: 35px;font-weight: bold; color: #454545;"> you Exactly ... </span>
+        <p style="font-size: 35px;font-weight: bold; color: #454545;"> Well,</p>
+        <span style="font-size: 35px;font-weight: bold; color: #454545;"> the </span>
+        <span style="font-weight: lighter;color: #454545;">Practice</span>
+        <span style="font-size: 35px;font-weight: bold; color: #454545;"> In </span>
+        <p style="font-weight: lighter;color: #454545;">Years</p>
+
+        </br>
+
+        <span style="font-weight: lighter;color: #454545;">All</span>
+        <span style="font-size: 35px;font-weight: bold; color: #454545;"> these</span>
+        <span style="font-weight: lighter;color: #454545;">above</span>
+        <span style="font-size: 35px;font-weight: bold; color: #454545;"> from where</span>
+        <p style="font-size: 35px;font-weight: bold; color: #454545; text-decoration: underline;">we would like to </p>
+        <span style="font-weight: lighter;color: #454545;">know</span>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- twelth section -->
+
+
+  <section>
+    <div class="doctor-cap-one">
+      <h1 style="font-size: 50px;width: 80%;">This is all in here</h1>
+    </div>
+    <div class="doctor-profile-two">
+      <img src="./assets/2 Doctors Profile Close Up.png" alt="">
+    </div>
+    <div>
+  </section>
+
+
+  <!-- 13th section -->
+
+<div class="homepage" style="background:#f0f0f0;">
+  <section >
+    <div class="main-title">
+      <h1 style="text-align: center;font-size: 30px;">It’s the doctor in the perspective and then the clinic.</h1>
+    </div>
+    <div class="main-title" style="text-align: center;">
+      <h1 style="font-size: 30px;">Viceversa is</h1> true for single clinic owners..
+    </div>
+  </section>
+
+  <section>
+    <div class="doctor-cap-three" >
+      <h1 class="clinic-profile" >The</br> Clinic</br> Profile</h1>
+    </div>
+    <div class="doctor-profile-three" style="background: #fff;">
+      <img src="./assets/3 Clinic Profile CloseUp.png" alt="">
+    </div>
+  </section>
+</div>
+  <!--  -->
+
+  <section class="homepage" style="background:#f0f0f0;">
+    <div style="padding: 70px 0px 104px 0px; text-align: left;";>
+      
+      <h1 style="font-size: 20px; font-weight: 700;">Clinic Address</h1>
+      <p style="font-size: 20px;">How Shall I Find You - Check</p>
+    </div>
+  </section>
+
+<div class="homepage" style="padding-bottom: 325px;background:#f0f0f0;">
+  <section>
+    <div class="doctor-cap-three">
+      <h1 style="font-size: 20px;font-weight: 600; padding-bottom:30px ;">How shall i navigate you - Check</h1>
+    </div>
+    <div class="map-img">
+      <h3>Extension - Google Map</h3>
+      <img src="./assets/map.PNG" alt="">
+    </div>
+  </section>
+</div>
+
+<section class="homepage" style="background:#f0f0f0;padding-bottom: 58px;">
+  <div style="text-align: left;";>
+    
+    <h1 style="font-size: 24px; font-weight: 700;text-align: center">Reachouts - Clinic Contacts</h1>
+    <p style="font-size: 24px; font-weight: 400;text-align: center;">How shall i be in touch with your Clinic, Clinic’s - Check Check Check !!!</p>
+  </div>
+</section>
+
+<section class="homepage" style="background:#f0f0f0;padding-bottom: 58px;">
+  <div style="padding: 70px 0px 104px 0px; text-align: left;";>
+    
+    <h1 style="font-size: 24px; font-weight: 700;">Additional Clinic Presence</h1>
+    <p style="font-size: 24px; font-weight: 400;">But, are you there today. - Lets check?</p>
+  </div>
+</section>
+
+
+<section class="homepage" style="background:#f0f0f0;">
+  <div style="text-align: right;";>
+    <h1 style="font-size: 24px; font-weight: 700;padding-bottom: 18px;">If** Additional Clinic Presence</br><span style="color: #FF7C7C;"> - Your 2nd Clinic</span></h1>
+    <p style="font-size: 24px; font-weight: 400;">Oh, you not her for today, Are you available elsewhere ? - Is it true what i see?? - Yes Checked.</p>
+  </div>
+  <div>
+    <div style="background: #fff;">
+      
+      <img width="305" height="455" src="./assets/5 Change Clinic.png" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="homepage" style="background:#f0f0f0;padding-bottom: 50px;">
+  <div style="text-align: left;";>
+    
+    <h1 style="font-size: 23px; font-weight: 700;padding-top: 20px;">Same You. Same Profile - <span style="color: #61ACFF;">Extended Aspects</span></h1>
+    <p style="font-size: 24px; font-weight: 400;">Oooo Is this your new clinic - Nice i just checked.</p>
+  </div>
+</section>
+  <div class="same-profile-box">
+    <div>
+      <img width="358" height="289" src="./assets/6 Close Up.png" alt="">
+    </div>
+  </div>
+  
+  <section class="homepage" style="background:#f0f0f0;padding-bottom: 58px;padding-top: 50px;">
+    <div style="text-align: left;";>
+      
+      <h1 style="font-size: 24px; font-weight: 700;text-align: center">Your Medical Presence - Services, Specialisation Potrayed.</h1>
+      <p style="font-size: 24px; font-weight: 400;text-align: center;">And new to me to know, is this all you give as a service. - Quite a doctor  i may say.  - also Checked!</p>
+    </div>
+  </section>
+
+
 
   <section class="contact-page">
     <!-- Add your contact page content here -->
