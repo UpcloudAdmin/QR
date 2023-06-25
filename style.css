@@ -88,13 +88,13 @@ nav {
 
 .content-over-img-first ul {
   list-style: none !important;
-  margin-right: 25px;
-  position: absolute;
+    margin: 15px 30px 0px 0px;
+    position: absolute;
 }
 
 .content-over-img-second ul {
   list-style: none !important;
-  margin-left: 10px;
+  margin: 20px 0px 0px 20px;
   
 }
 
@@ -941,11 +941,13 @@ height: 455px;
 
 .bold-line {
   width: 20%;
-  height: 2px;
+  height: 4px;
   background-color: black;
   font-weight: bold;
-  margin-top: 20px; /* Adjust as needed */
-  margin-bottom: 10px; /* Adjust as needed */
+  margin-top: 20px; 
+  margin-bottom: 15px; 
+  border-radius: 10px;
+  border-radius: 10px 0px 0px 10px;
 }
 .left-list
   {
@@ -953,18 +955,38 @@ height: 455px;
     float: left;
     list-style-type: none;
     text-align: left;
+    font-size: 20px;
+    font-weight: 400;
   }
   .right-list {
     width: 50%;
     float: left;
     list-style-type: none;
     text-align: left;
+    font-size: 20px;
+    font-weight: 400;
   }
 
   .list-item {
     margin-bottom: 10px;
 }
 
+.button-container {
+  display: flex;
+  align-items: center;
+  padding: 43px 0px 0px 0px;
+}
+
+.button-container button {
+  background: none;
+  border: none;
+}
+
+.button-container h1 {
+  /* padding-top: 50px; */
+  text-align: left;
+  margin: 0;
+}
 
 }
 
