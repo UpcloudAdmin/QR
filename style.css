@@ -33,7 +33,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   width: auto;
 }
 
@@ -191,7 +191,7 @@ nav {
 
 /* contact page section */
 .contact-page {
-  padding: 50px;
+  /* padding: 50px; */
   background-color: #f4f4f4;
 }
 
@@ -883,7 +883,7 @@ left: -5px;
 }
 .qna {
   width: 100%;
-  height: auto;
+  height: 120vh;
   background:#f0f0f0 ;
 }
 
@@ -895,12 +895,12 @@ left: -5px;
   left: 30%;
   margin: 50px 0px 0px 0px;
 }
-/* .doctor-profile-two{
-  padding-bottom: 144px;
-} */
+
 .doctor-profile-three img{
-width: 275px;
-height: 455px;
+  width: 255px;
+  height: 440px;
+  position: relative;
+  right: 10%;
 }
 .doctor-cap-three h1{
   align-items: flex-end!important;
@@ -936,7 +936,7 @@ height: 455px;
   width:358px;
    height:289px;
   padding: 20px;
-  background: #fff;
+  background:#f0f0f0;
 }
 
 .bold-line {
@@ -986,6 +986,13 @@ height: 455px;
   /* padding-top: 50px; */
   text-align: left;
   margin: 0;
+}
+
+.contact-page {
+  background: #f0f0f0;
+    width: 40vh;
+    height: 100%;
+    padding: 30px;
 }
 
 }
