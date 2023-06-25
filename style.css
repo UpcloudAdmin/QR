@@ -139,8 +139,8 @@ nav {
 
 .carousel-label {
   position: absolute;
-  bottom: 10px;
-  left: 30%;
+  top:5%;
+  left: 5%;
   transform: translateY(120%);
   padding: 10px;
   /* background-color: rgba(0, 0, 0, 0.7); */
@@ -929,6 +929,14 @@ left: -5px;
   border-radius: 10px;
 }
 
+.contact-two{
+  padding: 15px;
+  color: #000;
+  background:none;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
 .contact a {
   text-decoration: none!important;
 }
@@ -993,6 +1001,17 @@ left: -5px;
     width: 40vh;
     height: 100%;
     padding: 30px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 40px;
 }
 
 }
