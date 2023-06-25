@@ -5,6 +5,9 @@ function clickContact() {
   window.location.href = "contact.html";
 }
 
+function clickToHome() {
+  window.location.href = "index.html";
+}
 document.addEventListener("DOMContentLoaded", function() {
     const carousel = document.querySelector(".carousel");
     const slides = Array.from(document.querySelectorAll(".carousel-slide"));
